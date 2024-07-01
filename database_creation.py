@@ -51,7 +51,7 @@ try:
     c.execute('SELECT * FROM recipes')  ##this will retrieve all records from db, from coloumns and rows 
     rows = c.fetchall()  ##bringing up all rows
     for row in rows:  ## ensures it goes through every row 
-     print(row)
+        print(row)
 except sqlite3.Error as e:  ## however if this does not work, error caught and message printed. 
     print("Error. Unable to fetch data")
 
